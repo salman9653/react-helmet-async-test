@@ -1,0 +1,57 @@
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.page-content h1 {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-description {
+  background-color: #f9f9f9;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-description p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.page-description ul {
+  background-color: var(--background-color);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  margin-top: var(--spacing-md);
+}
+
+.page-description li {
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.page-description li strong {
+  color: var(--primary-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-content {
+    padding: var(--spacing-sm);
+  }
+
+  .page-description {
+    padding: var(--spacing-md);
+  }
+
+  .page-description p {
+    font-size: 1rem;
+  }
+}

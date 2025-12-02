@@ -1,0 +1,102 @@
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.page-content h1 {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-description {
+  background-color: #f9f9f9;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-description p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.page-description ul {
+  background-color: var(--background-color);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  margin-top: var(--spacing-md);
+}
+
+.page-description li {
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Contact-specific styles */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+}
+
+.contact-item {
+  background-color: var(--background-color);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-item h3 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.contact-item p {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-light);
+}
+
+.contact-item a {
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.contact-item a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-content {
+    padding: var(--spacing-sm);
+  }
+
+  .page-description {
+    padding: var(--spacing-md);
+  }
+
+  .page-description p {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
